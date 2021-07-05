@@ -8,10 +8,10 @@
 
 """Brazil Data Cube JupyterHub OAuth Client"""
 
-
+from .oauth import BrazilDataCubeOAuthenticator
 from .version import __version__
 
-
 __all__ = (
-    '__version__',
+    "__version__",
+    "BrazilDataCubeOAuthenticator"
 )

@@ -183,3 +183,8 @@ class BrazilDataCubeOAuthenticator(OAuthenticator, BrazilDataCubeOAuthMixin):
 
     def normalize_username(self, username):
         return user_name_pattern(username)
+
+
+__all__ = (
+    "BrazilDataCubeOAuthenticator"
+)
