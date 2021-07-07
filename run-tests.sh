@@ -9,6 +9,6 @@
 
 pydocstyle bdc_jupyterhub_oauth examples tests setup.py && \
 isort bdc_jupyterhub_oauth examples tests setup.py --check-only --diff && \
-check-manifest --ignore ".travis.yml,.drone.yml,.readthedocs.yml" && \
+check-manifest --ignore ".travis.yml,.drone.yml,.readthedocs.yml,development_config.py" && \
 sphinx-build -qnW --color -b doctest docs/sphinx/ docs/sphinx/_build/doctest && \
 pytest

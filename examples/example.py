@@ -6,4 +6,4 @@
 # under the terms of the MIT License; see LICENSE file for more details.
 #
 
-"""Example for Brazil Data Cube JupyterHub OAuth Client"""
+"""Example for Brazil Data Cube JupyterHub OAuth Client."""

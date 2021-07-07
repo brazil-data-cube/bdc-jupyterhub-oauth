@@ -10,4 +10,4 @@ BDC_JUPYTERHUB_OAUTH API
 ========================
 
 
-.. automodule:: bdc_jupyterhub_oauth.bdc_jupyterhub_oauth
+.. automodule:: bdc_jupyterhub_oauth

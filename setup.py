@@ -24,6 +24,7 @@ docs_require = [
 
 tests_require = [
     'coverage>=4.5',
+    'codecov',
     'coveralls>=1.8',
     'pytest>=5.2',
     'pytest-cov>=2.8',
@@ -31,6 +32,12 @@ tests_require = [
     'pydocstyle>=4.0',
     'isort>4.3',
     'check-manifest>=0.40',
+    'jupyterhub==1.4.1',
+    'pytest-asyncio==0.15.1',
+    'mwoauth >= 0.3.7',
+    'pre-commit',
+    'pyjwt',
+    'requests-mock'
 ]
 
 examples_require = [
@@ -66,8 +73,8 @@ setup(
     version=version,
     description=__doc__,
     long_description=readme + '\n\n' + history,
-    long_description_content_type = 'text/x-rst',
-    keywords=['Time series', 'Earth Observations'],
+    long_description_content_type='text/x-rst',
+    keywords=['JupyterHub', 'OAuthenticator'],
     license='MIT',
     author='Brazil Data Cube Team',
     author_email='brazildatacube@inpe.br',
