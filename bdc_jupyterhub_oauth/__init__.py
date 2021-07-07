@@ -6,7 +6,7 @@
 # under the terms of the MIT License; see LICENSE file for more details.
 #
 
-"""Brazil Data Cube JupyterHub OAuth Client"""
+"""Brazil Data Cube JupyterHub OAuth Client."""
 
 from .oauth import BrazilDataCubeOAuthenticator
 from .version import __version__

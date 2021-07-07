@@ -5,7 +5,7 @@
 # Brazil Data Cube JupyterHub OAuth 2.0 is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 #
-"""Brazil Data Cube JupyterHub OAuth Module"""
+"""Brazil Data Cube JupyterHub OAuth Module."""
 
 import base64
 import os
@@ -15,13 +15,13 @@ from urllib.parse import urlencode
 from oauthenticator.oauth2 import OAuthenticator
 from tornado.auth import OAuth2Mixin
 from tornado.httpclient import HTTPRequest
-from traitlets import default, Unicode, List
+from traitlets import List, Unicode, default
 
 from .utils import filter_roles_by_application_name
 
 
 def user_name_pattern(name):
-    """Converts the user's email into a valid Unix username
+    """Convert the user's email into a valid Unix username.
 
     Args:
         name (str): User Email
@@ -40,6 +40,8 @@ class BrazilDataCubeOAuthMixin(OAuth2Mixin):
 
 
 class BrazilDataCubeOAuthenticator(OAuthenticator, BrazilDataCubeOAuthMixin):
+    """Brazil Data Cube OAuth 2.0 Client for JupyterHub."""
+
     refresh_pre_spawn = True
     enable_auth_state = True
     login_service = "Brazil Data Cube OAuth"
@@ -154,6 +156,7 @@ class BrazilDataCubeOAuthenticator(OAuthenticator, BrazilDataCubeOAuthMixin):
         }
 
     async def authenticate(self, handler, data=None):
+        """Overwritten method for authentication with BDC-Auth."""
         code = handler.get_argument("code")
 
         params = dict(
@@ -182,6 +185,7 @@ class BrazilDataCubeOAuthenticator(OAuthenticator, BrazilDataCubeOAuthMixin):
         return user_info
 
     def normalize_username(self, username):
+        """Normalize username to a generic and useful pattern."""
         return user_name_pattern(username)
 
 

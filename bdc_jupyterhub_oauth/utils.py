@@ -6,11 +6,11 @@
 # under the terms of the MIT License; see LICENSE file for more details.
 #
 
-"""Brazil Data Cube JupyterHub OAuth Utilities"""
+"""Brazil Data Cube JupyterHub OAuth Utilities."""
 
 
 def filter_roles_by_application_name(application_name, roles):
-    """Filters the roles that should be scanned based on the application name returned by OAuth.
+    """Filter the roles that should be scanned based on the application name returned by OAuth.
 
     Args:
         application_name (str): application name
@@ -19,5 +19,5 @@ def filter_roles_by_application_name(application_name, roles):
         list: List of application roles
     """
     return list(
-        filter(lambda x: application_name in x.split(":")[0], [] if roles is None else roles)
+        filter(lambda x: application_name == x.split(":")[0], [] if roles is None else roles)
     )
