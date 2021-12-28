@@ -54,4 +54,4 @@ Brazil Data Cube JupyterHub OAuth Client
 About
 =====
 
-Python library to add support for Brazil Data Cube OAuth Services on JupyterHub.
+Python library to add support for Brazil Data Cube OAuth 2.0 Services on JupyterHub OAuthenticator.
