@@ -1,6 +1,6 @@
 ..
     This file is part of Brazil Data Cube JupyterHub OAuth 2.0.
-    Copyright (C) 2021 INPE.
+    Copyright (C) 2022 INPE.
 
     Brazil Data Cube JupyterHub OAuth 2.0 is free software; you can redistribute it and/or modify it
     under the terms of the MIT License; see LICENSE file for more details.
@@ -14,12 +14,6 @@ Brazil Data Cube JupyterHub OAuth Client
 .. image:: https://img.shields.io/badge/license-MIT-green
         :target: https://github.com//brazil-data-cube/bdc-jupyterhub-oauth/blob/master/LICENSE
         :alt: Software License
-
-
-.. image:: https://drone.dpi.inpe.br/api/badges/brazil-data-cube/bdc-jupyterhub-oauth/status.svg
-        :target: https://drone.dpi.inpe.br/brazil-data-cube/bdc-jupyterhub-oauth
-        :alt: Build Status
-
 
 .. image:: https://codecov.io/gh/brazil-data-cube/bdc-jupyterhub-oauth/branch/master/graph/badge.svg
         :target: https://codecov.io/gh/brazil-data-cube/bdc-jupyterhub-oauth
@@ -54,4 +48,35 @@ Brazil Data Cube JupyterHub OAuth Client
 About
 =====
 
-Python library to add support for Brazil Data Cube OAuth 2.0 Services on JupyterHub OAuthenticator.
+BDC-Auth-Client is a client package for JupyterHub authentication and authorization based on Brazil Data Cube OAuth 2.0.
+
+Installation
+============
+
+
+See `INSTALL.rst <./INSTALL.rst>`_.
+
+
+Running
+=======
+
+
+See `USING.rst <./USING.rst>`_.
+
+
+Developer Documentation
+=======================
+
+
+See https://bdc-jupyterhub-oauth.readthedocs.io/en/latest.
+
+
+License
+=======
+
+
+.. admonition::
+    Copyright (C) 2022 INPE.
+
+    BDC-Jupyterhub-OAuth is free software; you can redistribute it and/or modify it
+    under the terms of the MIT License; see LICENSE file for more details.
