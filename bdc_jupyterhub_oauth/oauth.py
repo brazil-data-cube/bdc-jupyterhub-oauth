@@ -23,9 +23,9 @@ from .utils import convert_user_name_pattern, filter_roles_by_application_name
 class BrazilDataCubeOAuthMixin(OAuth2Mixin):
     """Brazil Data Cube OAuth 2.0 Client Mixin class."""
 
-    _OAUTH_USERDATA_URL = "https://brazildatacube.dpi.inpe.br/auth/v1/users/me"
-    _OAUTH_AUTHORIZE_URL = "https://brazildatacube.dpi.inpe.br/auth/v1/oauth/authorize"
-    _OAUTH_ACCESS_TOKEN_URL = "https://brazildatacube.dpi.inpe.br/auth/v1/oauth/token"
+    _OAUTH_USERDATA_URL = "<change-me>"
+    _OAUTH_AUTHORIZE_URL = "<change-me>"
+    _OAUTH_ACCESS_TOKEN_URL = "<change-me>"
 
 
 class BrazilDataCubeOAuthenticator(OAuthenticator, BrazilDataCubeOAuthMixin):
